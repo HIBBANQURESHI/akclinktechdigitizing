@@ -16,7 +16,7 @@ import CollabratePage from "./pages/CollabrationPage";
 import TermsConditons from "./pages/Footer/TermsConditions";
 import PrivacyPolicy from "./pages/Footer/PrivacyPolicy";
 import RefundPolicy from "./pages/Footer/RefundPolicy";
-import Newsroom from "./pages/Footer/Newsroom";
+import Newsroom from "./pages/Footer/Newsroom"; 
 
 
 
