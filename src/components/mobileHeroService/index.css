@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* Font family setup */
+.fonts {
+  font-family: "Open Sans", "Arial", sans-serif !important; /* Removed "Patron" since it's not imported */
+  font-size: 2rem; /* Base font size for mobile or small screens */
+}
+
+/* Font size for larger screens */
+@media (min-width: 1024px) {
+  .fonts {
+    font-size: 4rem !important;
+  } 
+}
+

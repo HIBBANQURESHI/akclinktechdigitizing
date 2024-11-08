@@ -1,0 +1,115 @@
+/* Importing Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+.fontFamily{
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    max-width: 1500px;  
+    width: 100%;
+    margin: 0 auto;
+}
+#button{
+position: relative;
+}
+#button::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%; /* Start from the center */
+    width: 0;
+    margin-bottom: -2px;
+    height: 2px;
+    background-color: #FCA311;
+    transition: all 0.5s ease; 
+  }
+  
+  #button:hover::after {
+    left: 0;
+    width: 100%; /* Full width on hover */
+  }
+  .Num{
+    border: 1px solid #f1f1f1;
+    transition: .5s;
+    cursor: pointer;
+}
+.Num:hover{
+    border-color: #FCA311;
+    transition: .5s;
+  }
+  .button-header {
+    position: relative; /* Required for pseudo-element positioning */
+    overflow: hidden; /* Hides the overflow of the pseudo-element */
+    color: white; /* Default text color */
+}
+
+.button-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%; /* Start off-screen to the left */
+    width: 100%;
+    height: 100%;
+    background: white; /* Gradient color */
+    transition: left 0.5s ease; /* Transition effect */
+    z-index: 0; /* Behind the button text */
+}
+
+.button-header:hover::before {
+    left: 0; /* Move into view on hover */
+}
+
+.button-header{
+    border: 1px solid;
+}
+.button-header:hover {
+    color: #FCA311; /* Change text color on hover */
+    border: 1px solid #FCA311;
+}
+
+.button-header span {
+    position: relative; /* Needed to show text on top */
+    z-index: 1; /* On top of the pseudo-element */
+}
+
+#NavFontAnchor a{
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0 20px;
+}
+#NavFontAnchor a:hover{
+    text-decoration: none;
+}
+
+#NavFont a:hover{
+    text-decoration: none;
+}
+#NavFont{
+    position: relative;
+    }
+    #NavFont::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%; /* Start from the center */
+        width: 0;
+        margin-bottom: -6px;
+        height: 3px;
+        background-color: #fff;
+        transition: all 0.9s ease; 
+      }
+      
+      #NavFont:hover::after {
+        left: 0;
+        width: 100%; /* Full width on hover */
+      }
+
+
+
+
+@media (max-width: 1156px) {
+    .header{
+        height: 14vh!important;
+    }
+}

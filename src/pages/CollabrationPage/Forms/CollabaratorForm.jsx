@@ -1,0 +1,399 @@
+import React, { useState } from "react";
+import { useForm } from "react-hook-form";
+import { countryList } from "../../../utils/CountryList";
+import emailjs from "emailjs-com";
+import { collaboratorTemplate } from "../../../utils/forms-formats/CollaboratorFormat";
+
+const CollaboratorForm = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm();
+  const [loading, setLoading] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(null);
+
+  const onSubmit = async (data) => {
+    setLoading(true);
+    setError(null);
+
+    const formattedData = collaboratorTemplate(data);
+
+    try {
+      const response = await emailjs.send(
+        "service_8hdasd9",
+        "template_2dn1ftd",
+        { message: formattedData },
+        "E0y6p0_LBMpPkmoYG"
+      );
+      console.log("SUCCESS!", response.status, response.text);
+      setSubmitted(true);
+      reset();
+    } catch (err) {
+      console.error("FAILED...", err);
+      setError("Submission failed. Please try again.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  if (submitted) {
+    return (
+      <div className="max-w-xl p-6 mx-auto text-center bg-white rounded shadow-md">
+        <h3 className="text-2xl font-semibold text-green-600">
+          Thank you for your submission!
+        </h3>
+        <p className="mt-4 text-gray-700">
+          We will review your application and get back to you shortly.
+        </p>
+      </div>
+    );
+  }
+
+  return (
+    <div>
+      {loading && (
+        <div className="flex items-center justify-center h-64">
+          <div className="loader">Loading...</div>{" "}
+          {/* Customize your loader here */}
+        </div>
+      )}
+
+      {!loading && (
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className="max-w-full p-6 mx-auto space-y-6 bg-white rounded shadow-md"
+          encType="multipart/form-data"
+        >
+          <input type="hidden" {...register("type")} value="collaborators" />
+
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <div>
+              <label className="block text-sm font-medium text-gray-700">
+                Organization*
+              </label>
+              <input
+                {...register("organization", {
+                  required: "Organization is required",
+                })}
+                className={`form-input w-full p-2 border ${
+                  errors.organization ? "border-red-500" : "border-gray-300"
+                } rounded`}
+                type="text"
+                placeholder="Organization"
+              />
+              {errors.organization && (
+                <p className="text-xs text-red-500">
+                  {errors.organization.message}
+                </p>
+              )}
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-gray-700">
+                Focal Person’s Name*
+              </label>
+              <input
+                {...register("focalPerson", {
+                  required: "Focal Person’s Name is required",
+                })}
+                className={`form-input w-full p-2 border ${
+                  errors.focalPerson ? "border-red-500" : "border-gray-300"
+                } rounded`}
+                type="text"
+                placeholder="Focal Person’s Name"
+              />
+              {errors.focalPerson && (
+                <p className="text-xs text-red-500">
+                  {errors.focalPerson.message}
+                </p>
+              )}
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <div>
+              <label className="block text-sm font-medium text-gray-700">
+                Country*
+              </label>
+              <select
+                {...register("country", { required: "Country is required" })}
+                className={`form-select w-full p-2 border ${
+                  errors.country ? "border-red-500" : "border-gray-300"
+                } rounded`}
+              >
+                <option value="" disabled selected>
+                  Country
+                </option>
+                {countryList.map((country, index) => (
+                  <option key={index} value={country}>
+                    {country}
+                  </option>
+                ))}
+              </select>
+              {errors.country && (
+                <p className="text-xs text-red-500">{errors.country.message}</p>
+              )}
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-gray-700">
+                Email*
+              </label>
+              <input
+                {...register("email", {
+                  required: "Email is required",
+                  pattern: { value: /^\S+@\S+$/i, message: "Email is invalid" },
+                })}
+                className={`form-input w-full p-2 border ${
+                  errors.email ? "border-red-500" : "border-gray-300"
+                } rounded`}
+                type="email"
+                placeholder="Email"
+              />
+              {errors.email && (
+                <p className="text-xs text-red-500">{errors.email.message}</p>
+              )}
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <div>
+              <label className="block text-sm font-medium text-gray-700">
+                Phone*
+              </label>
+              <input
+                {...register("phone", { required: "Phone is required" })}
+                className={`form-input w-full p-2 border ${
+                  errors.phone ? "border-red-500" : "border-gray-300"
+                } rounded`}
+                type="text"
+                placeholder="Phone"
+              />
+              {errors.phone && (
+                <p className="text-xs text-red-500">{errors.phone.message}</p>
+              )}
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-gray-700">
+                Address*
+              </label>
+              <input
+                {...register("address", { required: "Address is required" })}
+                className={`form-input w-full p-2 border ${
+                  errors.address ? "border-red-500" : "border-gray-300"
+                } rounded`}
+                type="text"
+                placeholder="Address"
+              />
+              {errors.address && (
+                <p className="text-xs text-red-500">{errors.address.message}</p>
+              )}
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <div>
+              <label className="block text-sm font-medium text-gray-700">
+                City*
+              </label>
+              <input
+                {...register("city", { required: "City is required" })}
+                className={`form-input w-full p-2 border ${
+                  errors.city ? "border-red-500" : "border-gray-300"
+                } rounded`}
+                type="text"
+                placeholder="City"
+              />
+              {errors.city && (
+                <p className="text-xs text-red-500">{errors.city.message}</p>
+              )}
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-gray-700">
+                State/Province*
+              </label>
+              <input
+                {...register("state", {
+                  required: "State/Province is required",
+                })}
+                className={`form-input w-full p-2 border ${
+                  errors.state ? "border-red-500" : "border-gray-300"
+                } rounded`}
+                type="text"
+                placeholder="State/Province"
+              />
+              {errors.state && (
+                <p className="text-xs text-red-500">{errors.state.message}</p>
+              )}
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <div>
+              <label className="block text-sm font-medium text-gray-700">
+                Postal Code*
+              </label>
+              <input
+                {...register("postal", { required: "Postal Code is required" })}
+                className={`form-input w-full p-2 border ${
+                  errors.postal ? "border-red-500" : "border-gray-300"
+                } rounded`}
+                type="text"
+                placeholder="Postal Code"
+              />
+              {errors.postal && (
+                <p className="text-xs text-red-500">{errors.postal.message}</p>
+              )}
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-gray-700">
+                How did you hear about us?
+              </label>
+              <input
+                {...register("hear_about")}
+                className="w-full p-2 border border-gray-300 rounded form-input"
+                type="text"
+                placeholder="How did you hear about us?"
+              />
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <div>
+              <label className="block text-sm font-medium text-gray-700">
+                Organizational Website Link:
+              </label>
+              <input
+                {...register("org_link")}
+                className="w-full p-2 border border-gray-300 rounded form-input"
+                type="text"
+                placeholder="Website Link"
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-gray-700">
+                Team Size*
+              </label>
+              <select
+                {...register("team_count", {
+                  required: "Team size is required",
+                })}
+                className={`form-select w-full p-2 border ${
+                  errors.team_count ? "border-red-500" : "border-gray-300"
+                } rounded`}
+              >
+                <option value="" disabled selected>
+                  Select Team Size
+                </option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              {errors.team_count && (
+                <p className="text-xs text-red-500">
+                  {errors.team_count.message}
+                </p>
+              )}
+            </div>
+          </div>
+
+          {/* Radios for Collaboration Options */}
+          <div className="mb-6">
+            <label className="block text-sm font-medium text-gray-700">
+              Are you exploring opportunities for operational domain
+              collaboration?*
+            </label>
+            <div className="flex mt-2 space-x-4">
+              <label className="inline-flex items-center">
+                <input
+                  type="radio"
+                  {...register("collaboration_explore", { required: true })}
+                  value="Yes"
+                  className="w-4 h-4 text-blue-600 border-gray-300 form-radio"
+                />
+                <span className="ml-2 text-gray-700">Yes</span>
+              </label>
+              <label className="inline-flex items-center">
+                <input
+                  type="radio"
+                  {...register("collaboration_explore", { required: true })}
+                  value="No"
+                  className="w-4 h-4 text-blue-600 border-gray-300 form-radio"
+                />
+                <span className="ml-2 text-gray-700">No</span>
+              </label>
+            </div>
+            {errors.collaboration_explore && (
+              <p className="text-xs text-red-500">Please select an option.</p>
+            )}
+          </div>
+          <div className="mb-6">
+            <label className="block text-sm font-medium text-gray-700">
+              Are you exploring opportunities to partner on products/services?
+            </label>
+            <div className="flex mt-2 space-x-4">
+              <label className="inline-flex items-center">
+                <input
+                  type="radio"
+                  {...register("partner_products", { required: true })}
+                  value="Yes"
+                  className="w-4 h-4 text-blue-600 border-gray-300 form-radio"
+                />
+                <span className="ml-2 text-gray-700">Yes</span>
+              </label>
+              <label className="inline-flex items-center">
+                <input
+                  type="radio"
+                  {...register("partner_products", { required: true })}
+                  value="No"
+                  className="w-4 h-4 text-blue-600 border-gray-300 form-radio"
+                />
+                <span className="ml-2 text-gray-700">No</span>
+              </label>
+            </div>
+            {errors.partner_products && (
+              <p className="text-xs text-red-500">Please select an option.</p>
+            )}
+          </div>
+          <div className="mb-4 input-group">
+            <textarea
+              {...register("exploring")}
+              className="w-full p-2 mt-2 border border-gray-300 rounded form-field"
+              cols="30"
+              rows="5"
+              placeholder="What are some of the reasons for exploring this collaboration?"
+            />
+
+            <textarea
+              {...register("plans")}
+              className="w-full p-2 mt-2 border border-gray-300 rounded form-field"
+              cols="30"
+              rows="5"
+              placeholder="What are some of the plans for this collaboration?"
+            />
+          </div>
+          {/* Loading, Error, and Submit Button */}
+          {loading && <p className="text-blue-500">Submitting...</p>}
+          {error && <p className="text-red-500">{error}</p>}
+
+          <button
+            type="submit"
+            className="w-full px-4 py-2 text-white bg-blue-600 rounded hover:bg-blue-700 disabled:bg-blue-400"
+            disabled={loading}
+          >
+            Submit
+          </button>
+        </form>
+      )}
+    </div>
+  );
+};
+
+export default CollaboratorForm;

@@ -1,0 +1,51 @@
+@import url('https://fonts.example.com/uniform-font.css');
+@media (max-width: 1024px) {
+    .app{
+        width: 100% !important;
+        justify-content: center !important;
+    }
+    .font{
+        text-align: center;
+    }
+}
+@media (max-width: 1438px) {
+    .app-image{
+        width: 400px !important;
+        height: 400px !important;
+    }
+    .app-image-a{
+        right:-70px !important;
+    }
+    
+}
+@media (max-width: 1438px){
+    .app-image-a{
+        right:-100px !important;
+    }
+}
+@media (max-width: 1023px){
+    .app-none{
+        display: none !important;
+    }
+    .app-dev{
+        margin: 0px !important;
+    }
+}
+.font{
+    font-family: 'Uniform', sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    letter-spacing: 1px;
+}
+.font-app-size{
+    font-family: 'Uniform', sans-serif !important;
+    font-size: 1.75rem !important;
+    font-weight: 500 !important;
+    letter-spacing: 1px;
+}
+.m-font{
+    font-family: 'Uniform', sans-serif !important;
+}
+.d-size{
+    font-size: 14px !important;
+}
