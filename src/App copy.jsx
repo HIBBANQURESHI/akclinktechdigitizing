@@ -18,7 +18,7 @@ import PrivacyPolicy from "./pages/Footer/PrivacyPolicy";
 import RefundPolicy from "./pages/Footer/RefundPolicy";
 import Newsroom from "./pages/Footer/Newsroom"; 
 
-
+ 
 
 // Create routes
 const router = createBrowserRouter([
