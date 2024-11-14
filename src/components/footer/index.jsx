@@ -10,7 +10,7 @@ const Footer = () => {
   return (
 <>
   {/* ========== FOOTER ========== */}
-  <footer className="w-full mt-auto bg-yellow-500 yellow:bg-neutral-400">
+  <footer className="w-full mt-auto bg-blue-700 yellow:bg-neutral-400">
     <div className="mt-auto w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 lg:pt-20 mx-auto">
       {/* Grid */}
       <div className="grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-5">
@@ -20,7 +20,7 @@ const Footer = () => {
           <div className="grid mt-3 space-y-3">
             <p>
               <Link
-                className="inline-flex text-black font-semibold gap-x-2 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                className="inline-flex text-white font-semibold gap-x-2 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
                 to="/"
               >
                 Home
@@ -28,7 +28,7 @@ const Footer = () => {
             </p>
             <p>
               <Link
-                className="inline-flex text-black font-semibold gap-x-2 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                className="inline-flex text-white font-semibold gap-x-2 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
                 to="/about-us"
               >
                 Who Are We
@@ -36,7 +36,7 @@ const Footer = () => {
             </p>
             <p>
               <Link
-                className="inline-flex text-black font-semibold gap-x-2 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                className="inline-flex text-white font-semibold gap-x-2 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
                 to="/contact-us"
               >
                 Contact Us
@@ -45,7 +45,7 @@ const Footer = () => {
 
             <p>
               <Link
-                className="inline-flex text-black font-semibold gap-x-2 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                className="inline-flex text-white font-semibold gap-x-2 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
                 to="/collabrate-us"
               >
                 Collabrate With Us
@@ -62,7 +62,7 @@ const Footer = () => {
           <div className="grid mt-3 space-y-3">
             <p>
               <Link
-                className="inline-flex text-black font-semibold gap-x-2 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                className="inline-flex text-white font-semibold gap-x-2 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
                 to="/logo-branding"
               >
                 Logo design
@@ -70,7 +70,7 @@ const Footer = () => {
             </p>
             <p>
               <Link
-                className="inline-flex text-black font-semibold gap-x-2 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                className="inline-flex text-white font-semibold gap-x-2 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
                 to="/web-design"
               >
                 Web Design
@@ -78,7 +78,7 @@ const Footer = () => {
             </p>
             <p>
               <Link
-                className="inline-flex text-black font-semibold gap-x-2 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                className="inline-flex text-white font-semibold gap-x-2 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
                 to="/printing-&-packaging"
               >
                 Printing & Packaging
@@ -88,7 +88,7 @@ const Footer = () => {
            
             <p>
               <Link
-                className="inline-flex text-black font-semibold gap-x-2 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                className="inline-flex text-white font-semibold gap-x-2 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
                 to="/mobile"
               >
                 Mobile App
@@ -96,7 +96,7 @@ const Footer = () => {
             </p>
             <p>
               <Link
-                className="inline-flex text-black font-semibold gap-x-2 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                className="inline-flex text-white font-semibold gap-x-2 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
                 to="/ecom-experts"
               >
                 Ecom Experts
@@ -105,7 +105,7 @@ const Footer = () => {
 
             <p>
               <Link
-                className="inline-flex text-black font-semibold gap-x-2 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                className="inline-flex text-white font-semibold gap-x-2 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
                 to="/digital-seo"
               >
                 SEO
@@ -122,7 +122,7 @@ const Footer = () => {
           <div className="grid mt-3 space-y-3">
             <p>
               <Link
-                className="inline-flex text-black font-semibold gap-x-2 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                className="inline-flex text-white font-semibold gap-x-2 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
                 to="/terms-&-conditions"
               >
                 Terms & Conditions
@@ -130,7 +130,7 @@ const Footer = () => {
             </p>
             <p>
               <Link
-                className="inline-flex text-black font-semibold gap-x-2 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                className="inline-flex text-white font-semibold gap-x-2 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
                 to="/privacy-policy"
               >
                 Privacy Policy
@@ -138,7 +138,7 @@ const Footer = () => {
             </p>
             <p>
               <Link
-                className="inline-flex text-black font-semibold gap-x-2 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                className="inline-flex text-white font-semibold gap-x-2 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
                 to="/refund-policy"
               >
                 refund Policy
@@ -147,7 +147,7 @@ const Footer = () => {
 
             <p>
               <Link
-                className="inline-flex text-black font-semibold gap-x-2 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                className="inline-flex text-white font-semibold gap-x-2 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
                 to="/newsroom"
               >
                 Newsroom
@@ -161,7 +161,7 @@ const Footer = () => {
 
         {/* End Col */}
         <div className="col-span-2">
-          <h4 className="font-semibold text-black ">Stay up to date</h4>
+          <h4 className="font-semibold text-white ">Stay up to date</h4>
           <form>
             <div className="flex flex-col items-center gap-2 p-2 mt-4 bg-white rounded-lg sm:flex-row sm:gap-3 dark:bg-neutral-900">
               <div className="w-full">
@@ -177,7 +177,7 @@ const Footer = () => {
                 />
               </div>
               <Link
-                className="inline-flex items-center justify-center w-full p-3 text-sm font-medium text-white font-semibold bg-black border border-transparent rounded-lg sm:w-auto whitespace-nowrap gap-x-2 hover:bg-gray-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
+                className="inline-flex items-center justify-center w-full p-3 text-sm font-medium text-black hover:text-white font-semibold bg-orange-400 border border-transparent rounded-lg sm:w-auto whitespace-nowrap gap-x-2 hover:bg-blue-900 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
                 to="#"
               >
                 Subscribe
@@ -194,7 +194,7 @@ const Footer = () => {
       {/* End Grid */}
       <div className="grid mt-5 sm:mt-12 gap-y-2 sm:gap-y-0 sm:flex sm:justify-between sm:items-center">
         <div className="flex items-center justify-between">
-          <p className="text-sm text-black font-semibold dark:text-neutral-400">
+          <p className="text-sm text-white font-semibold dark:text-neutral-400">
             © All Rights Reserved AKC Link Tech Digitizing.
           </p>
         </div>
@@ -202,7 +202,7 @@ const Footer = () => {
         {/* Social Brands */}
         <div>
           <Link
-            className="inline-flex items-center justify-center text-xl font-semibold text-black border border-transparent rounded-lg size-10 gap-x-2 hover:bg-white/10 focus:outline-none focus:bg-white/10 disabled:opacity-50 disabled:pointer-events-none"
+            className="inline-flex items-center justify-center text-xl font-semibold text-white border border-transparent rounded-lg size-10 gap-x-2 hover:bg-white/10 focus:outline-none focus:bg-white/10 disabled:opacity-50 disabled:pointer-events-none"
             to="https://www.facebook.com/people/AKC-Link-Tech-Digitizing/61565175612368/"
             target="_blank"
             rel="noopener noreferrer" 
@@ -219,7 +219,7 @@ const Footer = () => {
             </svg>
           </Link>
           <Link
-            className="inline-flex items-center justify-center text-sm font-semibold text-black border border-transparent rounded-lg size-10 gap-x-2 hover:bg-white/10 focus:outline-none focus:bg-white/10 disabled:opacity-50 disabled:pointer-events-none"
+            className="inline-flex items-center justify-center text-sm font-semibold text-white border border-transparent rounded-lg size-10 gap-x-2 hover:bg-white/10 focus:outline-none focus:bg-white/10 disabled:opacity-50 disabled:pointer-events-none"
             to="https://www.akclinktech.com/"
             target="_blank"
             rel="noopener noreferrer"
@@ -236,7 +236,7 @@ const Footer = () => {
             </svg>
           </Link>
           <Link
-            className="inline-flex items-center justify-center text-sm font-semibold text-black border border-transparent rounded-lg size-10 gap-x-2 hover:bg-white/10 focus:outline-none focus:bg-white/10 disabled:opacity-50 disabled:pointer-events-none"
+            className="inline-flex items-center justify-center text-sm font-semibold text-white border border-transparent rounded-lg size-10 gap-x-2 hover:bg-white/10 focus:outline-none focus:bg-white/10 disabled:opacity-50 disabled:pointer-events-none"
             to="https://www.instagram.com/akc.linktechdigitizing/"
             target="_blank"
             rel="noopener noreferrer"
@@ -245,7 +245,7 @@ const Footer = () => {
 
           </Link>
           <Link
-            className="inline-flex items-center justify-center text-sm font-semibold text-black border border-transparent rounded-lg size-10 gap-x-2 hover:bg-white/10 focus:outline-none focus:bg-white/10 disabled:opacity-50 disabled:pointer-events-none"
+            className="inline-flex items-center justify-center text-sm font-semibold text-white border border-transparent rounded-lg size-10 gap-x-2 hover:bg-white/10 focus:outline-none focus:bg-white/10 disabled:opacity-50 disabled:pointer-events-none"
             to="https://www.linkedin.com/company/akc-link-tech-digitizing/"
             target="_blank"
             rel="noopener noreferrer"

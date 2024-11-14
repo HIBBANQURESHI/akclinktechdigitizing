@@ -56,21 +56,13 @@ const projectData = [
   { id: 16,category: 'Mobile Application', image: mb4, description: 'Mobile Application' },
   { id: 17,category: 'Mobile Application', image: mb5, description: 'Mobile Application' },
   { id: 18,category: 'Mobile Application', image: mb6, description: 'Mobile Application' },
-  { id: 19,category: 'Ecom Experts', image: esty1, description: 'Ecom Experts' },
-  { id: 20,category: 'Ecom Experts', image: esty2, description: 'Ecom Experts' },
-  { id: 21,category: 'Ecom Experts', image: amazon1, description: 'Ecom Experts' },
-  { id: 22,category: 'Ecom Experts', image: amazon2, description: 'Ecom Experts' },
-  { id: 23,category: 'Ecom Experts', image: shopify1, description: 'Ecom Experts' },
-  { id: 24,category: 'Ecom Experts', image: shopify2, description: 'Ecom Experts' },
-  { id: 25,category: 'Ecom Experts', image: walmart1, description: 'Ecom Experts' },
-  { id: 26,category: 'Ecom Experts', image: walmart2, description: 'Ecom Experts' },
   { id: 27,category: 'SEO / SMM', image: seo1, description: 'SEO / SMM' },
   { id: 28,category: 'SEO / SMM', image: smm2, description: 'SEO / SMM' },
   { id: 29,category: 'SEO / SMM', image: smm1, description: 'SEO / SMM' },
   { id: 30,category: 'SEO / SMM', image: seo2, description: 'SEO / SMM' },
 ];
 
-const categories = ['All Projects', 'Web Designs', 'SEO / SMM', 'Logo and Branding', 'Mobile Application', 'Ecom Experts'];
+const categories = ['All Projects', 'Web Designs', 'SEO / SMM', 'Logo and Branding', 'Mobile Application'];
 
 function ProjectSection() {
   const [activeTab, setActiveTab] = useState('All Projects');
@@ -101,7 +93,7 @@ function ProjectSection() {
           {categories.map((category, index) => (
             <button
               key={index}
-              className={`px-4 py-2 rounded-full ${activeTab === category ? 'bg-yellow-500 text-white' : 'bg-gray-200 text-black'}`}
+              className={`px-4 py-2 rounded-full ${activeTab === category ? 'bg-blue-900 text-white' : 'bg-gray-200 text-black'}`}
               onClick={() => setActiveTab(category)}
             >
               {category}
@@ -124,7 +116,7 @@ function ProjectSection() {
                   className="object-cover w-full h-48 transition-transform duration-300 group-hover:scale-110 group-hover:opacity-75"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 flex items-center justify-center transition-opacity duration-300 bg-yellow-500 opacity-0 group-hover:opacity-100">
+                <div className="absolute inset-0 flex items-center justify-center transition-opacity duration-300 bg-orange-500 opacity-0 group-hover:opacity-100">
                   <FaArrowRight className="text-3xl text-white" />
                 </div>
               </div>
@@ -135,7 +127,7 @@ function ProjectSection() {
         </div>
 
         <div className="mt-8">
-          <button className="px-6 py-2 text-white bg-yellow-500 rounded-full hover:bg-yellow-600">
+          <button className="px-6 py-2 text-white bg-blue-900 rounded-full hover:bg-transparent hover:border-2 hover:border-blue-900 hover:text-blue-900">
             All Projects
           </button>
         </div>

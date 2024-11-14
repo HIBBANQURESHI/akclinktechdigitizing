@@ -67,19 +67,16 @@ export default function Header() {
       <div style={{ height: "10vh" }} className="header flex items-center justify-between px-6">
         <div className="flex items-center">
           <Link to="/">
-            <img src={reactLogo} alt="AKCLinktech" width="400px" className="mr-3 h-44" style={{ marginBottom: '-23px' }} />
+            <img src={reactLogo} alt="AKCLinktech" width="400px" className=" h-52" style={{ marginBottom: '-23px' }} />
           </Link>
 
           {/* Upper nav for larger screens */}
-          <nav className="fontFamily hidden space-x-6 text-gray-600 md:flex" style={{ fontSize: '15px', fontWeight: '500' }}>
+          <nav className="fontFamily hidden space-x-6 text-black md:flex " style={{ fontSize: '15px', fontWeight: '500' }}>
             <Link to="/about-us" className={`hover:text-black ${isActive("/about-us") ? "text-black font-bold" : ""}`}>
               About Us
             </Link>
             <Link to="/contact-us" className={`hover:text-black ${isActive("/contact-us") ? "text-black font-bold" : ""}`}>
               Contact Us
-            </Link>
-            <Link to="/collabrate-us" className={`hover:text-black ${isActive("/collaborate-us") ? "text-black font-bold" : ""}`}>
-              Collaborate With Us
             </Link>
           </nav>
         </div>
@@ -87,16 +84,13 @@ export default function Header() {
         {/* Contact section */}
         <div className="fontFamily items-center hidden space-x-3 md:flex">
           <div className="Num flex py-2 px-3">
-            <span className="pr-1 text-xl text-orange-400">
+            <span className="pr-1 text-xl text-blue-700">
               <IoCall />
             </span>
-            <span className="text-sm text-gray-600" style={{ fontSize: '16px', fontWeight: '500' }}>
+            <span className="text-sm text-black" style={{ fontSize: '16px', fontWeight: '500' }}>
               Call Us: <span className="font-bold">(832) 278-2818</span>
             </span>
           </div>
-          <button onClick={() => setFormVisible(true)} className="button-header px-7 py-3 text-white bg-yellow-500 rounded hover:bg-yellow-600" style={{ fontSize: '15px', fontWeight: '500' }}>
-            <span>Request a Custom Quote</span>
-          </button>
         </div>
 
         {/* Trigger button for menu */}
@@ -150,15 +144,12 @@ export default function Header() {
               </div>
 
               {/* Upper navigation items */}
-              <div className="flex flex-col space-y-4 mt-4">
+              <div className="flex flex-col space-y-4 mt-4 ">
                 <Link to="/about-us" className={`hover:text-black ${isActive("/about-us") ? "text-black font-bold" : ""}`}>
                   About Us
                 </Link>
                 <Link to="/contact-us" className={`hover:text-black ${isActive("/contact-us") ? "text-black font-bold" : ""}`}>
                   Contact Us
-                </Link>
-                <Link to="/collabrate-us" className={`hover:text-black ${isActive("/collaborate-us") ? "text-black font-bold" : ""}`}>
-                  Collaborate With Us
                 </Link>
               </div>
 
@@ -182,9 +173,6 @@ export default function Header() {
                 <Link to="/mobile" className={`hover:underline ${isActive("/mobile") ? "font-bold" : ""}`}>
                   Mobile Apps
                 </Link>
-                <Link to="/ecom-experts" className={`hover:underline ${isActive("/ecom-experts") ? "font-bold" : ""}`}>
-                  Ecom Experts
-                </Link>
               </div>
             </motion.nav>
           </>
@@ -192,8 +180,8 @@ export default function Header() {
       </AnimatePresence>
 
       {/* Always show lower nav on larger screens */}
-      <div className="hidden md:flex py-3 bg-yellow-500">
-        <div className="fontFamily flex flex-wrap justify-center mx-auto space-x-3 text-base text-black font-semibold" id="NavFontAnchor">
+      <div className="hidden md:flex py-3 bg-blue-600">
+        <div className="fontFamily flex flex-wrap justify-center mx-auto space-x-3 text-base text-white font-semibold" id="NavFontAnchor">
           <Link to="/logo-branding" className={`hover:underline ${isActive("/logo-branding") ? "font-bold" : ""}`}  id="NavFont">
             Logo & Branding
           </Link>
@@ -208,9 +196,6 @@ export default function Header() {
           </Link>
           <Link to="/mobile" className={`hover:underline ${isActive("/mobile") ? "font-bold" : ""}`}  id="NavFont">
             Mobile Apps
-          </Link>
-          <Link to="/ecom-experts" className={`hover:underline ${isActive("/ecom-experts") ? "font-bold" : ""}`}  id="NavFont">
-            Ecom Experts
           </Link>
         </div>
       </div>

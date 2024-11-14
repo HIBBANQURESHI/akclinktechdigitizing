@@ -58,7 +58,6 @@ const Home = () => {
       <ToastContainer /> {/* Add ToastContainer here */}
       <HeroSection />
       <BrandSection />
-      <CallToAction />
       <ServicesSection />
       <ProjectSection />
 
@@ -85,7 +84,7 @@ const Home = () => {
         <div
           className="form-container"
           style={{
-            backgroundColor: 'black',
+            backgroundColor: '#060911',
             borderRadius: '8px',
             boxShadow: '0 10px 20px rgba(0, 0, 0, 0.2)',
             display: 'flex',
@@ -120,7 +119,7 @@ const Home = () => {
           <h1 style={{ marginBottom: '20px', fontWeight: '750', fontSize: '40px' }} className="text-white">
             Get a Free Quote
           </h1>
-          <p style={{ marginBottom: '20px', fontSize: '16px' }} className="text-gray-400 font-semibold py-3 text-md">
+          <p style={{ marginBottom: '20px', fontSize: '16px' }} className="text-white font-semibold py-3 text-md">
             Fill out the form below and we’ll be in touch to discuss your project.
           </p>
           <form onSubmit={handleSubmit}>
@@ -130,7 +129,7 @@ const Home = () => {
                 name="name" // Add name attribute
                 className="form-control"
                 style={{
-                  backgroundColor: 'black',
+                  backgroundColor: '#041229',
                   color: '#fff',
                   border: 'none',
                   borderBottom: '2px solid #718096',
@@ -151,7 +150,7 @@ const Home = () => {
                 name="email" // Add name attribute
                 className="form-control"
                 style={{
-                  backgroundColor: 'black',
+                  backgroundColor: '#041229',
                   color: '#fff',
                   border: 'none',
                   borderBottom: '2px solid #718096',
@@ -172,7 +171,7 @@ const Home = () => {
                 name="phone" // Add name attribute
                 className="form-control"
                 style={{
-                  backgroundColor: 'black',
+                  backgroundColor: '#041229',
                   color: '#fff',
                   border: 'none',
                   borderBottom: '2px solid #718096',
@@ -192,8 +191,8 @@ const Home = () => {
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
               style={{
-                backgroundColor: isHovered ? 'black' : '#f9a825',
-                color: isHovered ? '#f9a825' : 'black',
+                backgroundColor: isHovered ? '#060911' : '#ffa500',
+                color: isHovered ? '#ffa500' : '#060911',
                 padding: '10px 20px',
                 border: isHovered ? '2px solid #f9a825' : 'none',
                 borderRadius: '4px',

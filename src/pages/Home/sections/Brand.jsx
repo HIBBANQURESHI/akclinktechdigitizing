@@ -6,12 +6,12 @@ function BrandSection() {
       <div className="container mx-auto text-center">
         {/* Main Heading */}
         <h1 className="mb-6 text-3xl font-bold text-black md:text-6xl">
-          Increase Your Brand Visibility with Presence on Every Phone <span className="text-yellow-500">App Screen</span> 
+          Increase Your Brand Visibility with Presence on Every Phone <span className="text-blue-700">App Screen</span> 
         </h1>
 
         {/* Description Paragraph */}
         <p className="mb-6 text-lg font-light leading-relaxed text-black md:text-xl">
-          At <span className="font-bold text-yellow-500">AKCLinkTech </span>, we develop a personalized platform for your business 
+          At <span className="font-bold text-blue-700">AKCLinkTech </span>, we develop a personalized platform for your business 
           that curates maximum interactions between your targeted audience and business. We create mobile applications that 
           reflect positively on your business identity in the market.
         </p>
