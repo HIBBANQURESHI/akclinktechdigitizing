@@ -42,7 +42,9 @@ const AboutUs = () => {
         <Banner/>
        <AboutContent/>
        <Testimonial/>
+       <div className='py-5 bg-white'>
        <Testimonials testimonialData ={testimonials}/>
+       </div>
        <ConnectForm/>
        
 

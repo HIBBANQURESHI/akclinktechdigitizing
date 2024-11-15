@@ -421,14 +421,12 @@ const LogoBranding = () => {
         subDescription={content.subDescription}
       />
       <FQA />
-      <DetailsSection />
       <SampleGallery galleryData={galleryData} />
       <PricingService
         plans={pricingPlans}
         heading="Crafting Perfect Logo Packages for Corporations Globally"
         description="Our team of experts focus on client and customer satisfaction..."
       />
-      <OfferService sections={OfferData} bottomContent={null} />
       <DesignGuide />
       <ConnectForm />
       {isModalOpen && (

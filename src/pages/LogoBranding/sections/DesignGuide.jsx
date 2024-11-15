@@ -34,22 +34,22 @@ const DesignGuide = () => {
   ];
 
   return (
-    <section className="py-12">
-    <div className="container mx-auto text-center">
-      <h2 className="mb-8 text-4xl font-semibold text-yellow-500">Here is How we Create Professional Designs</h2>
+    <section className="py-12 bg-blue-700">
+    <div className="container mx-auto text-center ">
+      <h2 className="mb-8 text-4xl font-semibold text-white ">Here is How we Create Professional Designs</h2>
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 ">
         {steps.map((step, index) => (
           <div
             key={index}
-            className="p-6 transition-all duration-300 bg-white rounded-lg cursor-pointer group hover:bg-yellow-400 hover:text-white hover:border-yellow-400"
+            className="p-6 transition-all duration-300 bg-white rounded-lg cursor-pointer group hover:bg-orange-400 hover:text-white hover:border-yellow-400"
           >
             <img
               src={step.imgSrc}
               alt={step.title}
               className="mx-auto mb-4 h-20 transition-opacity duration-300 ease-in-out hover:opacity-50 font-semibold"
             />
-            <h3 className="mb-2 text-xl font-bold text-black">{step.title}</h3>
-            <p className="text-gray-800 font-semibold">{step.description}</p>
+            <h3 className="mb-2 text-xl font-semibold text-black">{step.title}</h3>
+            <p className="text-gray-800 font-normal">{step.description}</p>
           </div>
         ))}
       </div>

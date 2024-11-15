@@ -8,9 +8,9 @@ import { Autoplay, Pagination } from 'swiper/modules';
 
 const Testimonials = ({testimonialData}) => {
   return (
-    <section className="py-12 bg-black">
+    <section className="py-12 bg-white">
       <div className="container mx-auto mb-8 text-center">
-        <h2 className="text-4xl font-bold text-yellow-400">
+        <h2 className="text-4xl font-bold text-black">
           What Our Clients Say
         </h2>
       </div>
@@ -28,17 +28,17 @@ const Testimonials = ({testimonialData}) => {
       >
         {testimonialData && testimonialData.map((testimonial) => (
           <SwiperSlide key={testimonial.id}>
-            <div className="p-8 text-white bg-gray-800 rounded-lg shadow-lg">
+            <div className="p-8 text-white bg-blue-700 rounded-lg shadow-lg">
               <div className="flex items-center justify-center mb-4">
                 {/* Avatar */}
                 <img
                   src={testimonial.avatar}
                   alt={testimonial.name}
-                  className="w-20 h-20 border-4 border-yellow-400 rounded-full"
+                  className="w-20 h-20 border-4 border-orange-400 rounded-full"
                 />
               </div>
               <p className="mb-4 italic">{testimonial.feedback}</p>
-              <h4 className="text-lg font-bold text-yellow-400">
+              <h4 className="text-lg font-bold text-orange-400">
                 {testimonial.name}
               </h4>
             </div>

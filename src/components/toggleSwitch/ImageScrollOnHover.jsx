@@ -14,7 +14,7 @@ const ImageScrollOnHover = () => {
   const styles = {
     body: {
       fontFamily: 'Rubik, sans-serif',
-      backgroundColor: '#f4f6ff',
+      backgroundColor: '#fff',
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'center',

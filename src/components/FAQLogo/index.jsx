@@ -26,10 +26,10 @@ const FAQSection = () => {
   ];
 
   return (
-    <section className="py-24 bg-yellow-400">
+    <section className="py-24 bg-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-16">
-          <h2 className="text-5xl font-manrope text-center font-bold text-gray-900 leading-[3.25rem]">
+          <h2 className="text-5xl font-manrope text-center font-bold text-black leading-[3.25rem]">
             Graphic Design Services
           </h2>
         </div>
@@ -37,14 +37,14 @@ const FAQSection = () => {
           {faqData.map((faq, index) => (
             <div
               key={index}
-              className={`accordion border border-solid border-gray-300  bg-black hover:bg-white  p-4 rounded-xl transition duration-500 mb-8 lg:p-4 ${
-                activeAccordion === index ? 'bg-white text-black border-gray-600' : ''
+              className={`accordion border border-solid border-gray-300  bg-blue-900 hover:bg-blue-700  p-4 rounded-xl transition duration-500 mb-8 lg:p-4 ${
+                activeAccordion === index ? 'bg-blue-900 text-white border-gray-600' : ''
               }`}
             >
               <button
-                className={`accordion-toggle group inline-flex items-center justify-between text-left text-lg font-semibold leading-8 text-yellow-400 hover:text-yellow-600 w-full transition duration-500 ${
-                  activeAccordion === index ? 'font-medium text-black' : ''
-                } hover:text-black`}
+                className={`accordion-toggle group inline-flex items-center justify-between text-left text-lg font-semibold leading-8 text-orange-400 hover:text-orange-400 w-full transition duration-500 ${
+                  activeAccordion === index ? 'font-medium text-white' : ''
+                } hover:text-white`}
                 onClick={() => toggleAccordion(index)}
                 aria-expanded={activeAccordion === index}
                 aria-controls={`faq-${index}`}
@@ -91,7 +91,7 @@ const FAQSection = () => {
                   transition: 'max-height 0.5s ease',
                 }}
               >
-                <p className="text-base text-gray-900 font-normal leading-6">
+                <p className="text-base text-white font-light leading-6">
                   {faq.answer}
                 </p>
               </div>

@@ -75,25 +75,26 @@ const ContactUs = () => {
   return (
     <Layout>
       <Banner/>
-      <section className="py-10 w-full sm:w-11/12 md:w-10/12 lg:w-9/12 xl:w-8/12 mx-auto">
-  <div className="max-w-full flex flex-col md:flex-row items-center justify-center mx-auto px-4 py-10 text-gray-600 overflow-hidden md:px-8">
-    <div className="flex-1 mt-10 w-full p-4 sm:p-6 md:p-10 lg:p-16">
-      <form className="max-w-full w-full mx-auto" onSubmit={handleSubmit}>
-        <div className="relative flex justify-center z-0 w-full mb-5">
-          <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-yellow-500 text-center">Let's get your project started.</h1>
+      <div className='bg-white'>
+      <section className="py-10 w-full sm:w-11/12 md:w-10/12 lg:w-9/12 xl:w-8/12 mx-auto bg-white">
+  <div className="max-w-full flex flex-col md:flex-row items-center justify-center mx-auto px-4 py-10 text-gray-600 overflow-hidden md:px-8 bg-white">
+    <div className="flex-1 mt-10 w-full p-4 sm:p-6 md:p-10 lg:p-16 bg-white">
+      <form className="max-w-full w-full mx-auto bg-white" onSubmit={handleSubmit}>
+        <div className="relative flex justify-center z-0 w-full mb-5 bg-white">
+          <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-orange-400 text-center">Let's get your project started.</h1>
               </div>
 
               <div className="mt-24">
                 <div className="mb-5">
-                  <p className="block text-md font-medium mb-3 text-white font-semibold">I am interested in:</p>
+                  <p className="block text-md font-medium mb-3 text-black font-semibold">I am interested in:</p>
                   <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
                     {interestsOptions.map((interest) => (
                       <button
                         key={interest}
                         type="button"
                         onClick={() => toggleInterest(interest)}
-                        className={`py-2 px-4 border rounded-md font-semibold hover:bg-yellow-400 hover:text-black ${
-                          selectedInterests.includes(interest) ? 'bg-yellow-500 text-black font-semibold' : 'bg-gray-200 text-gray-700'
+                        className={`py-2 px-4 border rounded-md font-semibold hover:bg-orange-400 hover:text-black ${
+                          selectedInterests.includes(interest) ? 'bg-orange-400 text-black font-semibold' : 'bg-gray-200 text-gray-700'
                         }`}
                       >
                         {interest}
@@ -109,7 +110,7 @@ const ContactUs = () => {
                   type="text"
                   name="name"
                   id="floating_name"
-                  className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none"
+                  className="block py-2.5 px-0 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none"
                   placeholder=" "
                   required
                   value={formData.name} onChange={handleChange}
@@ -123,7 +124,7 @@ const ContactUs = () => {
                   type="email"
                   name="email"
                   id="floating_email"
-                  className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none"
+                  className="block py-2.5 px-0 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none"
                   placeholder=" "
                   required
                   value={formData.email} onChange={handleChange}
@@ -138,7 +139,7 @@ const ContactUs = () => {
                     type="tel"
                     name="phone"
                     id="floating_phone"
-                    className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none"
+                    className="block py-2.5 px-0 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none"
                     placeholder=" "
                     required
                     value={formData.phone} onChange={handleChange}
@@ -151,7 +152,7 @@ const ContactUs = () => {
                     type="text"
                     name="company"
                     id="floating_company"
-                    className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none"
+                    className="block py-2.5 px-0 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none"
                     placeholder=" "
                     required
                     value={formData.company} onChange={handleChange}
@@ -188,7 +189,7 @@ const ContactUs = () => {
                   name="message"
                   id="floating_textarea"
                   rows="4"
-                  className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none"
+                  className="block py-2.5 px-0 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none"
                   placeholder=" "
                   required
                   value={formData.message} onChange={handleChange}
@@ -200,7 +201,7 @@ const ContactUs = () => {
               <div className="flex justify-center">
                 <button
                   type="submit"
-                  className="text-black font-semibold mt-5 bg-yellow-500 hover:bg-yellow-600 rounded-lg text-sm sm:text-base lg:text-lg w-full sm:w-auto px-4 py-2 sm:px-5 sm:py-2.5"
+                  className="text-black font-normal mt-5 bg-orange-400 hover:bg-orange-500 rounded-lg text-sm sm:text-base lg:text-lg w-full sm:w-auto px-4 py-2 sm:px-5 sm:py-2.5"
                   >
                   Submit
                 </button>
@@ -209,6 +210,7 @@ const ContactUs = () => {
           </div>
         </div>
       </section>
+      </div>
     </Layout>
   )
 };

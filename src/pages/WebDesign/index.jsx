@@ -308,14 +308,12 @@ const WebDesign = () => {
                      interactions."
         subDescription="We have a team of creative designers and developers ready to bring your vision to life."
       />
-      <CallToAction />
       <PricingService
         plans={pricingPlans}
         heading="Crafting Perfect Logo Packages for Corporations Globally"
         description="Our team of experts focus on client and customer satisfaction."
       />
       <ImageScrollOnHover />
-      <Consultancy />
       <ConsultancyForm />
 
       {/* Modal for OrderForm */}

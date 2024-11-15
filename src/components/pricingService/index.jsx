@@ -22,7 +22,7 @@ const PricingSection = ({ plans, heading, description }) => {
   return (
     <div className="container-fluid md:px-32 sm:px-4 py-12 bg-white">
       <h2 className="mb-4 text-3xl font-extrabold text-center text-black">{heading}</h2>
-      <p className="mb-8 text-xl text-center font-semibold text-yellow-400">{description}</p>
+      <p className="mb-8 text-xl text-center font-semibold text-orange-400">{description}</p>
 
       {/* Pricing Cards */}
       <div className="grid flex items-center justify-center grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">

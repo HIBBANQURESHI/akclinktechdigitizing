@@ -64,7 +64,7 @@ export default function AppCards() {
 
   return (
     <div className="flex flex-col pt-12 gap-8 p-8 bg-gray-100 from-black to-gray-800 overflow-hidden">
-      <h2 className="mb-8 text-4xl font-bold text-center text-yellow-400 pt-12 mt-12"></h2>
+      <h2 className="mb-8 text-4xl font-bold text-center text-orange-400 pt-12 mt-12"></h2>
       
       <div className="grid gap-8 lg:grid-cols-1" style={{width:'80vw', margin:'0 auto'}}>
         {appData.map(app => (
@@ -78,13 +78,13 @@ export default function AppCards() {
             <img 
                 src={app.icon1} 
                 alt={app.name} 
-                className="block object-contain w-36 m-4 lg:w-36" 
+                className="block object-contain w-36 m-4 lg:w-36 text-orange-400" 
                 style={{width:'70px'}}
                 data-aos="fade-right"
                 data-aos-anchor-placement="bottom-bottom"
               />
-              <h3 className="font-app-size text-2xl font-bold text-yellow-400">{app.name}</h3>
-              <p className="text-gray-300">{app.description}</p>
+              <h3 className="font-app-size text-2xl font-bold text-orange-400">{app.name}</h3>
+              <p className="text-white">{app.description}</p>
             </div>
 
             {/* Images section (right side) */}

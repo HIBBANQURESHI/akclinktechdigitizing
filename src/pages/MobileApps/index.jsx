@@ -76,14 +76,14 @@ const MobileApps = () => {
         secondaryButtonLink="/live-chat"
         imageUrl={heroImg}
       />
-<MobileAppSlider/>
+      <div className="bg-blue-700">
+        <MobileAppSlider/>
+      </div>
 
-<MobileCardsSection/>
-<ConsultancyForm/>
-      <SampleGallery galleryData={galleryData}/>
-      <Testimonials testimonialData ={testimonials}/>
-      
-      
+      <MobileCardsSection/>
+      <ConsultancyForm/>
+      <SampleGallery galleryData={galleryData}/>    
+      <div className="py-8 bg-white"></div>
     </Layout>
   );
 };

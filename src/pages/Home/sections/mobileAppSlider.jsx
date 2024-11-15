@@ -45,7 +45,7 @@ export default function MobileAppSlider() {
   }, []);
 
   return (
-    <div className="flex justify-center justify-end flex-col gap-8 p-8 py-12 text-white bg-gray-900 drop-shadow lg:flex-row lg:gap-16">
+    <div className="flex justify-center justify-end flex-col gap-8 p-8 py-12 text-white bg-blue-700 drop-shadow lg:flex-row lg:gap-16">
       {/* Left Side: Swiper Slider */}
       <div className="app relative flex items-center justify-center w-full lg:w-1/2" style={{width:'400px'}}>
 
@@ -82,8 +82,8 @@ export default function MobileAppSlider() {
       </div>
 
       {/* Right Side: App List */}
-      <div className="w-full lg:w-1/2 z-10 justify-center">
-        <h3 className="font mb-4 text-2xl font-bold ms-4">MOBILE APPS</h3>
+      <div className="w-full lg:w-1/2 z-10 justify-center bg-blue-700">
+        <h3 className="font mb-4 text-2xl font-bold ms-4 bg-blue-700">MOBILE APPS</h3>
         <ul className="hidden space-y-4 lg:block">
           {appData.map(app => (
             <div key={app.id}>
@@ -97,7 +97,7 @@ export default function MobileAppSlider() {
               >
                 {/* Only the numbering will have a border */}
                 <span className={`m-font font-semibold font-bold border-2 p-3 mr-2 ${
-                  selectedApp === app.id ? 'border-yellow-300 text-yellow-300' : 'border-gray-300 text-white'
+                  selectedApp === app.id ? 'border-orange-400 text-orange-400' : 'border-orange-400 text-white'
                 }`}>
                   {app.id}
                 </span>
@@ -108,8 +108,8 @@ export default function MobileAppSlider() {
               </li>
               {selectedApp === app.id && (
                 <div className="relative flex ml-8" style={{marginBottom:'-10px', marginTop: '-15px'}}>
-                  <div className="w-20 bg-yellow-300 h-[1px] bg-white" style={{marginTop: '-50px',marginLeft:'-130px' }}></div> {/* Horizontal line */}
-                  <div className="w-3 h-3 bg-yellow-300 rounded-full" style={{marginTop: '-56px'}}></div>
+                  <div className="w-20 bg-orange-400 h-[1px] bg-white" style={{marginTop: '-50px',marginLeft:'-130px' }}></div> {/* Horizontal line */}
+                  <div className="w-3 h-3 bg-orange-400 rounded-full" style={{marginTop: '-56px'}}></div>
                 </div>
               )}
                {selectedApp === app.id && selectedApp < appData.length && (

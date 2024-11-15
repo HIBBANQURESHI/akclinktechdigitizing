@@ -45,7 +45,7 @@ const ConnectForm = () => {
             <input
               type="text"
               placeholder="Full Name"
-              className="w-full px-4 py-3 text-black bg-white rounded-full outline-none border-2 border-yellow-600"
+              className="w-full px-4 py-3 text-black bg-white rounded-full outline-none border-2 border-orange-400"
               name="name"
               value={formData.name}
               onChange={handleChange}
@@ -54,7 +54,7 @@ const ConnectForm = () => {
             <input
               type="number"
               placeholder="Phone Number"
-              className="w-full px-4 py-3 text-black bg-white rounded-full outline-none border-2 border-yellow-600"
+              className="w-full px-4 py-3 text-black bg-white rounded-full outline-none border-2 border-orange-400"
               name="phone"
               value={formData.phone}
               onChange={handleChange}
@@ -63,7 +63,7 @@ const ConnectForm = () => {
             <input
               type="email"
               placeholder="Email"
-              className="w-full px-4 py-3 text-black bg-white rounded-full outline-none border-2 border-yellow-600"
+              className="w-full px-4 py-3 text-black bg-white rounded-full outline-none border-2 border-orange-400"
               name="email"
               value={formData.email}
               onChange={handleChange}
@@ -75,13 +75,13 @@ const ConnectForm = () => {
               onChange={handleChange}
               placeholder="Message"
               rows="4"
-              className="w-full px-4 py-3 text-black bg-white outline-none rounded-xl border-2 border-yellow-600"
+              className="w-full px-4 py-3 text-black bg-white outline-none rounded-xl border-2 border-orange-400"
               required
             ></textarea>
 
             <button
               type="submit"
-              className="px-6 py-3 text-gray-900 transition-all duration-300 bg-yellow-500 rounded-full hover:bg-white hover:text-yellow-500 font-semibold transform hover:scale-105"
+              className="px-6 py-3 text-gray-900 transition-all duration-300 bg-orange-400 rounded-full hover:bg-white hover:text-black hover:border-2 hover:border-orange-400 font-semibold transform hover:scale-105"
             >
               Send Message
             </button>
@@ -93,7 +93,7 @@ const ConnectForm = () => {
       <div className="w-full px-4 mt-8 sm:px-6 lg:px-12 xl:px-48 lg:w-1/2 lg:mt-0">
         <div className="relative flex flex-col items-center justify-center p-4 space-y-4 bg-yellow-500 rounded-full w-[18em] h-[18em] sm:w-[22em] sm:h-[22em] md:w-[24em] md:h-[24em] lg:w-[30em] lg:h-[30em]">
           {/* "Bitten" effect on the right with slight diagonal rotation */}
-          <div className="absolute inset-0 rounded-full bg-yellow-500">
+          <div className="absolute inset-0 rounded-full bg-orange-400">
             {/* Adjusting bites with responsive sizes */}
             <div className="absolute w-[4em] h-[4em] bg-white rounded-full right-[-0.5em] top-[3em] rotate-[15deg] sm:w-[6em] sm:h-[6em] md:w-[8em] md:h-[8em] md:right-[-2em] md:top-[6em]"></div>
             <div className="absolute w-[3em] h-[3em] bg-white rounded-full right-[-2em] top-[2em] rotate-[15deg] sm:w-[5em] sm:h-[5em] md:w-[6em] md:h-[6em] md:right-[-7em] md:top-[5em]"></div>
@@ -103,19 +103,19 @@ const ConnectForm = () => {
       
           {/* Crumbs animation positioned outside the circle */}
           <div className="absolute left-[80%] top-[15%] animate-zoom sm:left-[90%] md:left-[110%] md:top-[25%]">
-            <div className="w-3 h-3 bg-yellow-500 rounded-full sm:w-4 sm:h-4 md:w-8 md:h-8"></div>
+            <div className="w-3 h-3 bg-orange-400 rounded-full sm:w-4 sm:h-4 md:w-8 md:h-8"></div>
           </div>
           <div className="absolute left-[75%] bottom-[30%] animate-zoom sm:left-[85%] md:left-[115%] md:bottom-[40%]">
-            <div className="w-3 h-3 bg-yellow-500 rounded-full sm:w-4 sm:h-4 md:w-7 md:h-7"></div>
+            <div className="w-3 h-3 bg-orange-400 rounded-full sm:w-4 sm:h-4 md:w-7 md:h-7"></div>
           </div>
           <div className="absolute left-[70%] bottom-[60%] animate-zoom sm:left-[80%] md:left-[96%] md:bottom-[75%]">
-            <div className="w-2.5 h-2.5 bg-yellow-500 rounded-full sm:w-3 sm:h-3 md:w-6 md:h-6"></div>
+            <div className="w-2.5 h-2.5 bg-orange-400 rounded-full sm:w-3 sm:h-3 md:w-6 md:h-6"></div>
           </div>
           <div className="absolute left-[80%] top-[5%] animate-zoom sm:left-[90%] md:left-[110%] md:top-[10%]">
-            <div className="w-3 h-3 bg-yellow-500 rounded-full sm:w-4 sm:h-4 md:w-7 md:h-7"></div>
+            <div className="w-3 h-3 bg-orange-400 rounded-full sm:w-4 sm:h-4 md:w-7 md:h-7"></div>
           </div>
           <div className="absolute left-[70%] top-[15%] animate-zoom sm:left-[80%] md:left-[95%] md:top-[30%]">
-            <div className="w-4 h-4 bg-yellow-500 rounded-full sm:w-5 sm:h-5 md:w-9 md:h-9"></div>
+            <div className="w-4 h-4 bg-orange-400 rounded-full sm:w-5 sm:h-5 md:w-9 md:h-9"></div>
           </div>
       
           {/* Social Media Links */}

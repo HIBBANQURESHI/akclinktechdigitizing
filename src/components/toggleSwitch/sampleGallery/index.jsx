@@ -183,10 +183,10 @@ const SampleGallery = ({ galleryData }) => {
   const imagesToDisplay = galleryData[activeTab] || [];
 
   return (
-    <section className="py-12 bg-black">
+    <section className="py-12 bg-blue-700">
       <div className="container mx-auto text-center">
         <h2 className="mb-4 text-4xl font-semibold text-white">Brilliant Ideas That Create Great Value</h2>
-        <p className="mb-8 text-yellow-400">
+        <p className="mb-8 text-orange-400">
           A showcase of our latest images. Click any image to view the full gallery.
         </p>
 

@@ -111,20 +111,20 @@ const Printing = () => {
         {/* header */}
         <Header />
 
-        <section className="py-10">
-          <div className="max-w-screen-xl flex justify-center mx-auto  px-4 py-10 gap-12 text-gray-600 overflow-hidden md:px-8 md:flex">
+        <section className="py-10 bg-white">
+          <div className="max-w-screen-xl flex justify-center mx-auto px-4 py-10 gap-12 text-gray-600 overflow-hidden md:px-8 md:flex">
             <div className="flex-none mt-20 space-y-5 max-w-xl">
-              <h1 className="text-4xl text-white font-extrabold sm:text-5xl">
+              <h1 className="text-4xl text-blue-700 font-extrabold sm:text-5xl">
                 Your Premier Printing Specialists
               </h1>
-              <p className="text-yellow-500">
+              <p className="text-black">
                 Revolutionizing your brand with uncompromising commitment,
                 creative approach, and absolute content.
               </p>
               <div className="flex items-center gap-x-3 sm:text-sm">
                 <a
                   href="javascript:void(0)"
-                  className="flex items-center justify-center gap-x-1 py-4 px-5 text-black font-medium bg-yellow-500 duration-150 hover:bg-black hover:text-yellow-500 hover:border-2 hover:border-yellow-500 active:bg-gray-900 rounded-full md:inline-flex"
+                  className="flex items-center justify-center gap-x-1 py-4 px-5 text-black font-medium bg-orange-400 duration-150 hover:bg-white hover:text-orange-400 hover:border-2 hover:border-orange-400 active:bg-gray-900 rounded-full md:inline-flex"
                 >
                   Get started
                   <svg
@@ -142,7 +142,7 @@ const Printing = () => {
                 </a>
                 <a
                   href="/contact-us"
-                  className="flex items-center justify-center gap-x-1 py-2 px-4 text-white hover:text-gray-400 font-medium duration-150 md:inline-flex"
+                  className="flex items-center justify-center gap-x-1 py-2 px-4 text-black hover:text-gray-400 font-medium duration-150 md:inline-flex"
                 >
                   Contact sales
                   <svg
@@ -161,7 +161,7 @@ const Printing = () => {
               </div>
 
               <div className="flex flex-col">
-                <h1 className="font-bold p-3 pb-5 md:text-2xl text-white">Acheviments</h1>
+                <h1 className="font-bold p-3 pb-5 md:text-2xl text-blue-900">Acheviments</h1>
                 <div className="flex items-center">
                   <img className="mx-4" src={b1} alt={b1} />
                   <img className="mx-4" src={b2} alt={b2} />
@@ -172,7 +172,7 @@ const Printing = () => {
             <div className="flex-1 hidden md:block">
               <form class="max-w-md mx-auto p-10 border border-black">
                 <div class="relative flex justify-center z-0 w-full mb-5 group">
-                  <h1 className="font-bold md:text-3xl text-yellow-500">
+                  <h1 className="font-bold md:text-3xl text-blue-700">
                     Instant Quote
                   </h1>
                 </div>
@@ -266,7 +266,7 @@ const Printing = () => {
                 <div className="flex justify-center">
                   <button
                     type="submit"
-                    class="text-black mt-5 bg-yellow-500 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                    class="text-black mt-5 bg-orange-400 hover:bg-orange-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                   >
                     Submit
                   </button>
@@ -279,7 +279,7 @@ const Printing = () => {
         {/* features */}
 
 
-        <section>
+        <section className="bg-white">
           <div
             className=" py-4 px-4 mx-auto bg-white p-5 border rounded-full text-center  md:max-w-screen-2xl lg:max-w-screen-2xl lg:px-30"
             
@@ -290,7 +290,7 @@ const Printing = () => {
                 <a href="#" className="block">
                   <h1 className="md:text-4xl text-2xl text-black font-bold">
                     Core{" "}
-                    <span className="text-yellow-500 hover:text-black">
+                    <span className="text-blue-700 hover:text-black">
                       Values
                     </span>
                     <br />
@@ -347,11 +347,11 @@ const Printing = () => {
         <section className="bg-white mt-10">
   <div className="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
     <div className="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
-      <div className="text-gray-500 sm:text-lg dark:text-gray-400">
+      <div className="text-gray-500 sm:text-lg dark:text-black">
         <h2 className="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
-        We offer bespoke package printing services with <span className="text-yellow-500">quick turnaround and quality that speaks for itself.</span>
+        We offer bespoke package printing services with <span className="text-blue-700">quick turnaround and quality that speaks for itself.</span>
         </h2>
-        <p className="mb-8 font-light lg:text-xl">
+        <p className="mb-8 font-light lg:text-xl text-black">
         Making a strong impression with your packaging and presentation is the key
          – whether you're an e-commerce business, an SME, or running your business from a garage.
           Our packaging solutions are an amazing way to highlight your product to your beloved customers.
@@ -363,7 +363,7 @@ const Printing = () => {
         >
           <li className="flex space-x-3">
             <svg
-              className="flex-shrink-0 w-5 h-5 text-yellow-500 "
+              className="flex-shrink-0 w-5 h-5 text-orange-400 "
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -380,7 +380,7 @@ const Printing = () => {
           </li>
           <li className="flex space-x-3">
             <svg
-              className="flex-shrink-0 w-5 h-5 text-yellow-500 "
+              className="flex-shrink-0 w-5 h-5 text-orange-400 "
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -397,7 +397,7 @@ const Printing = () => {
           </li>
           <li className="flex space-x-3">
             <svg
-              className="flex-shrink-0 w-5 h-5 text-yellow-500 "
+              className="flex-shrink-0 w-5 h-5 text-orange-400 "
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -413,7 +413,7 @@ const Printing = () => {
             </span>
           </li>
         </ul>
-       <button className="bg-yellow-500 text-black hover:bg-white hover:text-yellow-500 hover:border-2 hover:border-yellow-500 font-semibold p-3 px-5 border rounded-xl">
+       <button className="bg-orange-400 text-black hover:bg-white hover:text-black hover:border-2 hover:border-orange-400 font-semibold p-3 px-5 border rounded-xl">
         get a Free Quote
        </button>
       </div>
@@ -428,11 +428,11 @@ const Printing = () => {
   </div>
 </section>
 
-<section className="my-10 ">
+<section className="my-10 bg-blue-700 ">
   <ProductList/>
 </section>
 
-<section className="bg-yellow-500 mt-10">
+<section className="bg-white mt-10">
 
 <div className="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-10 lg:py-10 lg:px-6">
 <div className="items-center m gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
@@ -442,7 +442,7 @@ const Printing = () => {
         alt="feature image 2"
       />
       <div className="text-gray-500 sm:text-lg dark:text-gray-400">
-      <p className="font-normal lg:text-xl text-white" >
+      <p className="font-normal lg:text-xl text-blue-700" >
       In need of customized packaging solutions?
         </p>
         <h2 className="mb-4 text-5xl font-extrabold tracking-tight text-gray-900 dark:text-white">
@@ -457,7 +457,7 @@ const Printing = () => {
         >
           <li className="flex space-x-3">
             <svg
-              className="flex-shrink-0 w-5 h-5 text-black "
+              className="flex-shrink-0 w-5 h-5 text-blue-700 "
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -474,7 +474,7 @@ const Printing = () => {
           </li>
           <li className="flex space-x-3">
             <svg
-              className="flex-shrink-0 w-5 h-5 text-black"
+              className="flex-shrink-0 w-5 h-5 text-blue-700"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -491,7 +491,7 @@ const Printing = () => {
           </li>
           <li className="flex space-x-3">
             <svg
-              className="flex-shrink-0 w-5 h-5 text-black"
+              className="flex-shrink-0 w-5 h-5 text-blue-700"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -508,7 +508,7 @@ const Printing = () => {
           </li>
           <li className="flex space-x-3">
             <svg
-              className="flex-shrink-0 w-5 h-5 text-black"
+              className="flex-shrink-0 w-5 h-5 text-blue-700"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -525,7 +525,7 @@ const Printing = () => {
           </li>
           <li className="flex space-x-3">
             <svg
-              className="flex-shrink-0 w-5 h-5 text-black"
+              className="flex-shrink-0 w-5 h-5 text-blue-700"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -554,16 +554,12 @@ const Printing = () => {
 
 <section className="bg-white grid grid-rows-4 text-center grid-flow-col justify-center  py-20 flex justify-center items-center ">
 <p className="md:text-6xl flex justify-center items-center row-span-1 font-bold text-black">Ready To Get Your Branding Done?</p>
-<p className="md:text-3xl flex justify-center mt-5 items-center row-span-1 font-bold text-black">Talk To Our Design Consultant For Free</p>
+<p className="md:text-3xl flex justify-center mt-5 items-center row-span-1 font-bold text-blue-700">Talk To Our Design Consultant For Free</p>
 <div className="md:text-xl flex justify-center mt-5 items-center row-span-1 font-bold">
-  <button className="btn bg-yellow-500 px-5 py-3 text-white mx-2 border rounded-xl hover:bg-white hover:text-black hover:border-2 hover:border-yellow-500">Live Chat</button>
-  <button className="btn bg-white px-5 py-3 text-black mx-2 border border-yellow-500 rounded-xl hover:bg-yellow-100 hover:text-black">Get A Free Quote</button>
+  <button className="btn bg-orange-400 px-5 py-3 text-white mx-2 border rounded-xl hover:bg-white hover:text-black hover:border-2 hover:border-orange-400">Live Chat</button>
+  <button className="btn bg-white px-5 py-3 text-black mx-2 border border-orange-400 rounded-xl hover:border-blue-900 hover:text-black">Get A Free Quote</button>
 </div>
-<p className="md:text-3xl flex justify-center mt-5  items-center row-span-1 font-bold text-black">or call us at <span className="mx-4 text-yellow-500"><FaPhoneAlt /></span> (832) 278-2818</p>
-</section>
-
-<section >
-  <Testimonials testimonialData ={testimonials}/>
+<p className="md:text-3xl flex justify-center mt-5  items-center row-span-1 font-bold text-black">or call us at <span className="mx-4 text-yellow-500"><FaPhoneAlt className="text-blue-700" /></span> (832) 278-2818</p>
 </section>
 
 <section>

@@ -323,22 +323,22 @@ useEffect(() => {
       <Content sections={contentDescriptionData}/>
 
       <SEOExpertise/>
-
+      <div className="bg-white">
       <ClientCaseStudy {...caseStudyData}/>
+      </div>
 
       <SMMExpertise/>
 
+      <div className="bg-white">
       <ClientCaseStudy2 {...caseStudyData}/>
+      </div>
 
       <PricingService
         plans={pricingPlans}
         heading="Crafting Perfect Logo Packages for Corporations Globally"
         description="Our team of experts focus on client and customer satisfaction as the ultimate goal for our projects."
       />
-      <DetailsSection/>
       {/* <FAQSection faqsData={faqsData}/> */}
-      <Consultancy/>
-      <Testimonials testimonialData ={testimonials}/>
       <ConsultancyForm/>
 
       {/* Modal for OrderForm */}

@@ -46,7 +46,7 @@ function Banner() {
             <div className="buttons">
             <button
               type="submit"
-              className="px-6 py-3 mt-5 text-gray-900 transition duration-300 bg-yellow-500 rounded-full hover:bg-yellow-600"
+              className="px-6 py-3 mt-5 text-gray-900 transition duration-300 bg-orange-400 rounded-full hover:border-2 hover:border-orange-400 hover:bg-transparent hover:text-white"
             >
               Send Message
             </button>
