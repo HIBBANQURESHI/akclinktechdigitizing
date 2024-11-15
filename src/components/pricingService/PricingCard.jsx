@@ -26,8 +26,9 @@ const PricingCard = ({ title, price, features, buttonText, onButtonClick }) => {
 
       {/* Button */}
       <button
+      style={{backgroundColor:"#020825"}}
         onClick={onButtonClick}
-        className="mt-4 px-4 py-2 bg-blue-900 text-white font-bold rounded-full transition-colors duration-300 hover:bg-orange-400 hover:text-white border-2 border-orange-400"
+        className="mt-4 px-4 py-2 text-white font-bold rounded-full transition-colors duration-300 hover:bg-orange-400 hover:text-white border-2 border-orange-400"
       >
         {buttonText}
       </button>

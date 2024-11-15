@@ -15,7 +15,7 @@ import c12 from '../../assets/print-package/cards/card-img-12.jpg';
 const ProductList = () => {
   return (
     <>
-  <div className="text-center p-10 bg-blue-700">
+  <div className="text-center p-10" style={{backgroundColor:"#020825"}}>
     <h1 className="font-bold text-4xl mb-4 text-white">Our Popular Products</h1>
     <h1 className="text-sm text-white">Our state-of-the-art branding agency assists innovative 
       enterprises in accentuating their strengths and <br/> performing optimally. 
@@ -26,7 +26,8 @@ const ProductList = () => {
 
   <section
     id="Projects"
-    className="bg-blue-700 w-fit mx-auto grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5"
+    className="w-fit mx-auto grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5"
+    style={{backgroundColor:"#020825"}}
   >
   
   <div className="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl group">

@@ -93,8 +93,9 @@ function ProjectSection() {
           {categories.map((category, index) => (
             <button
               key={index}
-              className={`px-4 py-2 rounded-full ${activeTab === category ? 'bg-blue-900 text-white' : 'bg-gray-200 text-black'}`}
+              className={`px-4 py-2 rounded-full ${activeTab === category ? 'text-white' : 'bg-gray-200 text-white'}`}
               onClick={() => setActiveTab(category)}
+              style={{backgroundColor:"#020825"}}
             >
               {category}
             </button>
@@ -127,7 +128,7 @@ function ProjectSection() {
         </div>
 
         <div className="mt-8">
-          <button className="px-6 py-2 text-white bg-blue-900 rounded-full hover:bg-transparent hover:border-2 hover:border-blue-900 hover:text-blue-900">
+          <button className="px-6 py-2 text-white rounded-full hover:bg-transparent hover:border-2 hover:border-blue-900 hover:text-blue-900" style={{backgroundColor:"#020825"}}>
             All Projects
           </button>
         </div>

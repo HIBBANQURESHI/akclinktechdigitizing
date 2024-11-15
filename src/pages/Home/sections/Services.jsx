@@ -52,13 +52,13 @@ const ServicesSection = () => {
 
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {cardData.map((card, index) => (
-            <div key={index} className="relative flex flex-col p-8 mt-10 mb-20 text-black transition-all duration-300 bg-white border-2 border-black rounded-lg cursor-pointer group hover:bg-blue-900 hover:text-white hover:border-blue-900">
-              <div className="absolute top-0 p-12 text-white transition-all duration-300 transform -translate-x-1/2 -translate-y-1/2 bg-blue-900 rounded-full left-1/2 group-hover:bg-white group-hover:text-orange-400">
+            <div key={index} className="relative flex flex-col p-8 mt-10 mb-20 text-white transition-all duration-300 bg-white border-2 border-black rounded-lg cursor-pointer group hover:bg-blue-900 hover:text-white hover:border-blue-900" style={{backgroundColor:"#04081a"}}>
+              <div className="absolute top-0 p-12 text-white transition-all duration-300 transform -translate-x-1/2 -translate-y-1/2 rounded-full left-1/2 group-hover:bg-white group-hover:text-orange-400"  style={{backgroundColor:"#ffa200", color:"#020825"}}>
                 {card.icon}
               </div>
               <h3 className="mt-20 mb-10 font-bold md:text-4xl flex-grow">{card.title}</h3>
-              <p className="p-5 mb-5 text-black transition-all duration-300 group-hover:text-white font-light flex-grow">{card.description}</p>
-              <Link to={card.link} className="w-full px-4 py-2 bg-orange-400 border rounded-xl group-hover:bg-white group-hover:text-blue-900 font-semibold text-center">
+              <p className="p-5 mb-5 text-white transition-all duration-300 group-hover:text-white font-normal line-height-1.5 flex-grow">{card.description}</p>
+              <Link to={card.link} className="w-full px-4 py-2 bg-orange-600 border rounded-xl group-hover:bg-white group-hover:text-blue-900 font-semibold text-center" style={{backgroundColor:"#ffa200"}}>
                 Let's talk about it
               </Link>
             </div>

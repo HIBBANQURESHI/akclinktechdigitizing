@@ -10,7 +10,7 @@ const Footer = () => {
   return (
 <>
   {/* ========== FOOTER ========== */}
-  <footer className="w-full mt-auto bg-blue-700 yellow:bg-neutral-400">
+  <footer className="w-full mt-auto yellow:bg-neutral-400" style={{backgroundColor:"#020825"}}>
     <div className="mt-auto w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 lg:pt-20 mx-auto">
       {/* Grid */}
       <div className="grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-5">
@@ -177,7 +177,7 @@ const Footer = () => {
                 />
               </div>
               <Link
-                className="inline-flex items-center justify-center w-full p-3 text-sm font-medium text-black hover:text-white font-semibold bg-orange-400 border border-transparent rounded-lg sm:w-auto whitespace-nowrap gap-x-2 hover:bg-blue-900 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
+                className="inline-flex items-center justify-center w-full p-3 text-sm font-medium text-black hover:text-white font-semibold border border-transparent rounded-lg sm:w-auto whitespace-nowrap gap-x-2 hover:bg-blue-900 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" style={{backgroundColor:"#ffa200"}}
                 to="#"
               >
                 Subscribe

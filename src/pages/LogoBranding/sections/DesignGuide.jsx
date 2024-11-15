@@ -34,7 +34,7 @@ const DesignGuide = () => {
   ];
 
   return (
-    <section className="py-12 bg-blue-700">
+    <section className="py-12" style={{backgroundColor:"#020825"}}>
     <div className="container mx-auto text-center ">
       <h2 className="mb-8 text-4xl font-semibold text-white ">Here is How we Create Professional Designs</h2>
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 ">

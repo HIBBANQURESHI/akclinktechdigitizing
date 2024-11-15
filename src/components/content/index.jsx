@@ -16,7 +16,7 @@ const Content = ({ sections }) => {
         {/* Yellow background container behind the tabs with fixed size */}
         <div className="relative flex justify-center">
           <div
-            className="absolute bg-blue-700 rounded-t-lg py-8"
+            className="absolute bg-blue-950 rounded-t-lg py-8"
             style={{ width: '930px', height: '69.5px' }} // fixed size for background
           ></div>
           
@@ -29,7 +29,7 @@ const Content = ({ sections }) => {
                   onClick={() => handleTabClick(index)}
                   className={`py-4 w-64 px-4 rounded-lg font-semibold text-xl ${
                     activeTab === index
-                      ? 'bg-blue-900 text-white'  // Active tab color (dark yellow)
+                      ? 'bg-yellow-500 text-white'  // Active tab color (dark yellow)
                       : 'bg-white text-black'
                   }`}
                 >
@@ -44,7 +44,7 @@ const Content = ({ sections }) => {
         <div className="grid grid-cols-1 p-10 flex items-center gap-8 lg:grid-cols-2">
           {/* Left side - Text content */}
           <div>
-            <h2 className="text-2xl font-bold text-blue-700 sm:text-3xl">{sections[activeTab].title}</h2>
+            <h2 className="text-2xl font-bold text-blue-950 sm:text-3xl">{sections[activeTab].title}</h2>
             <h3 className="mt-2 text-lg text-black sm:text-xl">{sections[activeTab].subtitle}</h3>
             <p className="mt-4 text-base text-black sm:text-lg">{sections[activeTab].content}</p>
 
@@ -56,7 +56,7 @@ const Content = ({ sections }) => {
               ))}
             </ul>
 
-            <button className="px-3 py-4 mx-3 mt-6 bg-orange-400 text-black rounded-lg hover:bg-white hover:border-2 hover:border-orange-400 ">
+            <button className="px-3 py-4 mx-3 mt-6 bg-yellow-500 text-black rounded-lg hover:bg-white hover:border-2 hover:border-orange-400 ">
               {sections[activeTab].buttonText}
             </button>
           </div>

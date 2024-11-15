@@ -37,11 +37,13 @@ const FAQSection = () => {
           {faqData.map((faq, index) => (
             <div
               key={index}
-              className={`accordion border border-solid border-gray-300  bg-blue-900 hover:bg-blue-700  p-4 rounded-xl transition duration-500 mb-8 lg:p-4 ${
+              style={{backgroundColor:"#020825"}}
+              className={`accordion border border-solid border-gray-300 hover:bg-blue-700  p-4 rounded-xl transition duration-500 mb-8 lg:p-4 ${
                 activeAccordion === index ? 'bg-blue-900 text-white border-gray-600' : ''
               }`}
             >
               <button
+              style={{color:"#ffa200"}}
                 className={`accordion-toggle group inline-flex items-center justify-between text-left text-lg font-semibold leading-8 text-orange-400 hover:text-orange-400 w-full transition duration-500 ${
                   activeAccordion === index ? 'font-medium text-white' : ''
                 } hover:text-white`}

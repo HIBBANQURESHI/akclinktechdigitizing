@@ -84,7 +84,7 @@ const Home = () => {
         <div
           className="form-container"
           style={{
-            backgroundColor: '#060911',
+            backgroundColor: '#03050e',
             borderRadius: '8px',
             boxShadow: '0 10px 20px rgba(0, 0, 0, 0.2)',
             display: 'flex',

@@ -73,7 +73,7 @@ const HeroService = ({ heading, description, primaryButtonText, secondaryButtonT
           {/* Primary Button - Toggles Modal */}
           <button 
             onClick={toggleModal} 
-            className="inline-block w-full px-4 py-2 text-sm font-medium text-black bg-orange-400 rounded-lg hover:bg-transparent hover:border-2 hover:border-orange-400 hover:text-white md:w-auto md:px-6 md:py-3 md:text-lg"
+            className="inline-block w-full px-4 py-2 text-sm font-medium text-black bg-yellow-500 rounded-lg hover:bg-transparent hover:border-2 hover:border-orange-400 hover:text-white md:w-auto md:px-6 md:py-3 md:text-lg"
           >
             {primaryButtonText}
           </button>
@@ -81,7 +81,7 @@ const HeroService = ({ heading, description, primaryButtonText, secondaryButtonT
           {/* Secondary Button */}
           <a 
             href="/contact-us"
-            className="inline-block w-full px-4 py-2 text-sm font-light md:w-auto md:px-6 md:py-3 md:text-lg text-white bg-transparent rounded-lg hover:bg-orange-400 hover:text-black"
+            className="inline-block w-full px-4 py-2 text-sm font-light md:w-auto md:px-6 md:py-3 md:text-lg text-white bg-transparent rounded-lg hover:bg-yellow-500 hover:text-black"
           >
             {secondaryButtonText}
           </a>

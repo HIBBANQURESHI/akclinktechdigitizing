@@ -10,7 +10,7 @@ function SEOExpertise() {
         justifyContent: 'center',
         alignItems: 'center',
         padding: '20px',
-        backgroundColor: '#1d4ed8',
+        backgroundColor: '#020825',
         position: 'relative',
         overflow: 'hidden',
       }}
@@ -22,7 +22,7 @@ function SEOExpertise() {
           left: 0,
           width: '100%',
           height: '100%',
-          backgroundColor: '#1d4ed8',
+          backgroundColor: '#020825',
           opacity: 0.5,
           zIndex: 0,
         }}

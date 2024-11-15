@@ -62,7 +62,7 @@ export default function Header() {
   };
 
   return (
-    <header style={{ height: "auto" }} className="bg-white shadow-md">
+    <header style={{ height: "auto", backgroundColor:'#020825' }} className="shadow-md">
       <ToastContainer />
       <div style={{ height: "10vh" }} className="header flex items-center justify-between px-6">
         <div className="flex items-center">
@@ -71,11 +71,11 @@ export default function Header() {
           </Link>
 
           {/* Upper nav for larger screens */}
-          <nav className="fontFamily hidden space-x-6 text-black md:flex " style={{ fontSize: '15px', fontWeight: '500' }}>
-            <Link to="/about-us" className={`hover:text-black ${isActive("/about-us") ? "text-black font-bold" : ""}`}>
+          <nav className="fontFamily hidden space-x-6 text-white md:flex " style={{ fontSize: '15px', fontWeight: '500' }}>
+            <Link to="/about-us" className={`hover:text-white ${isActive("/about-us") ? "text-black font-bold" : ""}`}>
               About Us
             </Link>
-            <Link to="/contact-us" className={`hover:text-black ${isActive("/contact-us") ? "text-black font-bold" : ""}`}>
+            <Link to="/contact-us" className={`hover:text-white ${isActive("/contact-us") ? "text-black font-bold" : ""}`}>
               Contact Us
             </Link>
           </nav>
@@ -84,10 +84,10 @@ export default function Header() {
         {/* Contact section */}
         <div className="fontFamily items-center hidden space-x-3 md:flex">
           <div className="Num flex py-2 px-3">
-            <span className="pr-1 text-xl text-blue-700">
+            <span className="pr-1 text-xl text-white">
               <IoCall />
             </span>
-            <span className="text-sm text-black" style={{ fontSize: '16px', fontWeight: '500' }}>
+            <span className="text-sm text-white" style={{ fontSize: '16px', fontWeight: '500' }}>
               Call Us: <span className="font-bold">(832) 278-2818</span>
             </span>
           </div>
@@ -180,8 +180,8 @@ export default function Header() {
       </AnimatePresence>
 
       {/* Always show lower nav on larger screens */}
-      <div className="hidden md:flex py-3 bg-blue-600">
-        <div className="fontFamily flex flex-wrap justify-center mx-auto space-x-3 text-base text-white font-semibold" id="NavFontAnchor">
+      <div className="hidden md:flex py-3 bg-white">
+        <div className="fontFamily flex flex-wrap justify-center mx-auto space-x-3 text-base text-black font-semibold" id="NavFontAnchor">
           <Link to="/logo-branding" className={`hover:underline ${isActive("/logo-branding") ? "font-bold" : ""}`}  id="NavFont">
             Logo & Branding
           </Link>

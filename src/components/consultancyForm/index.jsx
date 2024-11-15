@@ -134,7 +134,7 @@ const ConsultancyForm = () => {
     //   <div className="w-full max-w-6xl p-6 bg-white rounded-lg shadow-lg">
              <div className="bg flex items-center justify-center bg-gray-100 to-gray-800 p-6">
              <div className="w-full max-w-6xl p-6 bg-transparent rounded-lg shadow-lg">
-        <h2 className="mb-6 text-3xl font-bold text-center text-blue-700">Get Free Consultancy</h2>
+        <h2 className="mb-6 text-3xl font-bold text-center text-blue-950">Get Free Consultancy</h2>
         <p className="mb-8 text-center text-black">
           If you're interested in speaking with us about an upcoming project, please fill out the form below, and we'll get in touch with you.
         </p>
@@ -203,7 +203,7 @@ const ConsultancyForm = () => {
 
           <div className="flex items-center space-x-3">
             <input type="checkbox" id="newsletter" className="text-gray-600 focus:ring-0" />
-            <label htmlFor="newsletter" className="text-blue-700">
+            <label htmlFor="newsletter" className="text-blue-950">
               Subscribe to our weekly newsletter.
             </label>
           </div>
@@ -211,9 +211,9 @@ const ConsultancyForm = () => {
           <div className="flex justify-center">
             <button
               type="submit"
-              className="relative w-1/3 py-2 font-semibold text-black bg-orange-400 rounded-lg overflow-hidden group"
+              className="relative w-1/3 py-2 font-semibold text-black bg-yellow-500 rounded-lg overflow-hidden group"
             >
-              <span className="absolute inset-0 bg-orange-600 transition-transform transform translate-x-[-100%] group-hover:translate-x-0 duration-300 ease-out"></span>
+              <span className="absolute inset-0 bg-yellow-300 transition-transform transform translate-x-[-100%] group-hover:translate-x-0 duration-300 ease-out"></span>
               <span className="relative z-10">Submit Now</span>
             </button>
           </div>
